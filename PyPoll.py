@@ -69,8 +69,8 @@ with open(file_to_load) as election_data:
             f"-------------------------\n"
             f"Winner: {winning_candidate}\n"
             f"Winning Vote Count: {winning_count:,}\n"
-            f"Winning Percentage:{winning_percentage:.1f}5\n"
-            f"-------------------------\n")
+            f"Winning Percentage: {winning_percentage:.1f}5\n"
+            f"-------------------------")
         print(winning_candidate_summary)
         # Save the winning candidate summary to the text file
         txt_file.write(winning_candidate_summary)
