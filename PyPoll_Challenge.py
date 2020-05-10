@@ -58,7 +58,6 @@ with open(file_to_load) as election_data:
         print(election_results, end="")
         # Save the final vote count to the text file
         txt_file.write(election_results)
-        
         print("County Votes:")
         txt_file.write("\nCounty Votes:\n")
         # Loop through county list
@@ -83,8 +82,7 @@ with open(file_to_load) as election_data:
         winning_county_summary = (
             f"\n-------------------------\n"
             f"Largest County Turnout: {winning_county}\n"
-            f"-------------------------\n"
-        )
+            f"-------------------------\n")
         print(winning_county_summary)
         # Save the winning candidate summary to the text file
         txt_file.write(winning_county_summary)
